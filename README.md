@@ -83,8 +83,8 @@ A **production-ready FastAPI-based AI Agent** with persistent memory, tool calli
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPO_NAME>.git
-cd <YOUR_REPO_NAME>
+git clone https://github.com/Osama-Abo-Bakr/AI_Personal_Assistant.git
+cd AI_Personal_Assistant
 ````
 
 ### 2️⃣ Create Conda Environment
