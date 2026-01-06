@@ -1,0 +1,9 @@
+.env
+__pycahche__/
+*.pyc
+credentials.json
+*.json
+token.json
+*_token.json
+.vscode/
+*__pycahche__
