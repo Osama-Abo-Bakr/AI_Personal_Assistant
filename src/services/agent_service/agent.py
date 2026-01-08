@@ -4,8 +4,9 @@ from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from src.database.db import load_chat_history, save_chat_history
 from langchain_classic.agents import AgentExecutor, create_tool_calling_agent
-from src.services.tools import duckduckgo_search_tool, get_cached_gmail_tools
-
+from src.services.tools.gmail_tool import get_cached_gmail_tools
+from src.services.tools.search_tool import duckduckgo_search_tool
+from src.services.tools.datetime_tool import datetime_tool
 
 # ---------------- Logging ---------------------
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s: %(message)s")
@@ -69,6 +70,7 @@ async def response_to_json(user_query: str, user_id: str) -> Dict[str, Any]:
         # tools = [duckduckgo_search_tool, gmail_tools, google_calendar_tools]
         
         tools = []
+        tools.append(datetime_tool())
         tools.append(duckduckgo_search_tool())
         tools.extend(get_cached_gmail_tools())
 

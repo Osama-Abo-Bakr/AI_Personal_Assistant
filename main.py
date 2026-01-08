@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from src.config import API_TOKEN
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException
-from src.services.agent import response_to_json
+from src.services.agent_service.agent import response_to_json
 from fastapi.middleware.cors import CORSMiddleware
 from src.database.db import (
     InitializeChatHistoryTable, 

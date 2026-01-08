@@ -2,6 +2,11 @@
 ddgs
 duckduckgo-search
 
+## Pinecone for vector database
+pinecone
+pinecone-client
+langchain_pinecone
+
 ## LangChain and related packages
 langchain-classic
 langchain-openai
@@ -25,3 +30,6 @@ mysql-connector-python
 ## Backend Framework
 fastapi[standard]
 uvicorn[standard]
+
+## Date and Time Handling
+pytz

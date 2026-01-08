@@ -4,6 +4,10 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 _ = load_dotenv(override=True)
 
+## Vector DB Configurations
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY", "")
+PINECONE_INDEX_NAME = os.getenv("PINECONE_INDEX_NAME", "default-index")
+
 ## OpenAI API Key
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 
